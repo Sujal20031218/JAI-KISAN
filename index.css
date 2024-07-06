@@ -1,0 +1,450 @@
+/* Add styles for the forecast columns */
+.forecast-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.alert-img {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Adjust the height as needed */
+}
+
+.forecast-column h2 {
+  margin-top: 0;
+}
+
+/* Style the forecast items inside each column */
+.forecast-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.forecast-temp {
+  font-weight: bold;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 120%;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 120%;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+
+
+/* Position the auth-buttons div at the top right corner */
+.auth-buttons {
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.auth-buttons button {
+  margin-left: 10px;
+  border-radius: 8px; 
+  border: none;
+  height: 44px;
+  width: 144px; 
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif
+}
+
+
+/* Add hover effect to the buttons */
+
+.auth-buttons button:hover {
+  background: #68adea6b;
+}
+
+
+
+.humidity {
+  font-size: 14px;
+  color: #666; /* Adjust the color as needed */
+  margin-top: 5px;
+}
+
+.wind {
+  font-size: 14px;
+  color: #666; /* Adjust the color as needed */
+  margin-top: 5px;
+}
+
+
+/* Add these styles to your existing CSS file (style.css) */
+
+.forecast-scroll {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent forecast items from wrapping to the next line */
+  scrollbar-width: none; /* Hide scrollbar for browsers that support it */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.forecast-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+}
+
+.forecast-item {
+  margin-right: 20px; /* Adjust spacing between forecast items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.forecast-temp {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.forecast-date {
+  font-size: 14px;
+}
+
+.forecast-day {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*---------------*/
+
+
+#mainNavbar {
+  background-color: rgba(0, 0, 0, 0.6); 
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: background-color 500ms; 
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); 
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+  color: white;
+}
+
+#mainNavbar .nav-link:hover {
+  color: hsl(51, 30%, 95%); 
+}
+
+#mainNavbar .navbar-brand {
+  color: hsl(51, 30%, 95%); 
+  font-size: 1.5rem;
+}
+
+/* Adjust the logo size as needed */
+.navbar-logo {
+  max-height: 40px; /* Set the desired max height */
+  width: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align the logo vertically within the navbar */
+}
+
+.navbar-brand {
+  color: hsl(51, 30%, 95%);
+  font-size: 1.5rem;
+  padding: 0; 
+}
+
+
+#navLinks .navbar-nav {
+  margin-right: 20px; 
+}
+
+#navLinks .nav-item {
+  margin-left: 20px; 
+}
+
+#navLinks .nav-link {
+  color: white;
+}
+
+#navLinks .nav-link:hover {
+  color: hsl(51, 30%, 95%);
+}
+
+.nav-link {
+  font-family: 'Your-Font-Family', sans-serif; 
+  font-size: 16px; 
+  font-weight: 500; 
+}
+
+#mainNavbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9); 
+  transition: background-color 0.3s ease;
+}
+
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: none; 
+  box-shadow: none; 
+}
+
+
+.dropdown-item {
+  color: white; 
+}
+
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: white; 
+}
+
+
+
+
+.icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.icons a i {
+  color: #afb6c7;
+  font-size: 24px; 
+  text-decoration: none; 
+}
+
+.icons a i:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px; /* Increase or decrease this value to adjust the footer thickness */
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem; /* Reduce the gap to make the elements closer together */
+  padding: 5px; /* Increase or decrease this value to adjust the gap */
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 5px;
+    gap: 1rem;
+  }
+
+ 
+}
+
+.icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.icons a i {
+  color: #afb6c7;
+  font-size: 24px; 
+  text-decoration: none; 
+}
+
+.icons a i:hover {
+  color: #fff;
+}
+
+
+/*-----------------*/
+footer {
+  background-color: #333;
+  background-size:0%;
+  color: #bfbfbf;
+  text-align: center;
+  padding: 10px 0; /* Adjust the padding as needed */
+  
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; /* Adjust the margin as needed */
+}
+
+/* Center the copyright text */
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 15px; /* Adjust the margin as needed */
+}
